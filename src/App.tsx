@@ -25,11 +25,15 @@ class App extends Template {
             graph={this.graph}
             adapterType={'writable'}
             namedEdges={true}
+            vertexNaming={true}
         />;
     }
 
     public calculate() {
-        console.log(graphModel);
+        //const hello = prompt('hello', '1');
+        //console.log(hello);
+        //console.log(typeof hello);
+        //console.log(graphModel);
         let res = 0;
         for (let index = 0; index < graphModel.edges.length; index++) {
             for (let jndex = 0; jndex < graphModel.edges.length; jndex++) {
