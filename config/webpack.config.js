@@ -599,10 +599,11 @@ module.exports = function(webpackEnv) {
             fileName => !fileName.endsWith('.map')
           );
 
-          return {
-            files: manifestFiles,
-            entrypoints: entrypointFiles,
-          };
+          // return {
+          //   files: manifestFiles,
+          //   entrypoints: entrypointFiles,
+          // };
+          return manifestFiles;
         },
       }),
       // Moment.js is an extremely popular library that bundles large locale files
